@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Soda Method</title>
+  <meta name="description" content="Contact The Soda Method to book a free assessment, ask about subjects, compare plans, or start a personal tutoring programme.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Soda Method home">
+      <img class="brand-mark" src="images/logo-mark.png" alt="" aria-hidden="true">
+      <span class="brand-text">The Soda Method <small>Tutoring</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="active nav-cta" href="contact.html">Book Assessment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div>
+        <p class="eyebrow">Free assessment</p>
+        <h1>Tell us what your learner needs next.</h1>
+        <p>Your selected subjects and plan will appear here automatically if you chose them on earlier pages.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="contact-info-panel">
+        <p class="section-kicker">Contact</p>
+        <h2>The Soda Method support starts with one message.</h2>
+        <p>Share the learner's grade, subjects, goals, and preferred times. We will reply with the best next step.</p>
+
+        <div class="contact-method">
+          <span>Call</span>
+          <a href="tel:+27 00 000 0000">+27 00 000 0000</a>
+        </div>
+        <div class="contact-method">
+          <span>Email</span>
+          <a href="mailto:brightmindstutoring@gmail.com">brightmindstutoring@gmail.com</a>
+        </div>
+        <div class="contact-method">
+          <span>Area</span>
+          <p>Johannesburg, South Africa</p>
+        </div>
+
+        <div class="chip-row selected-contact-subjects" data-subject-summary>
+          <span class="empty-chip">No subjects selected yet</span>
+        </div>
+      </div>
+
+      <form class="booking-form" data-booking-form>
+        <div class="form-grid">
+          <label>
+            Full name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            Learner grade
+            <select name="grade" required>
+              <option value="">Select grade</option>
+              <option>Grade 4-6</option>
+              <option>Grade 7-9</option>
+              <option>Grade 10-12</option>
+              <option>Adult learner</option>
+            </select>
+          </label>
+          <label>
+            Preferred plan
+            <select name="plan" data-plan-field>
+              <option value="">Not sure yet</option>
+              <option>Starter Plan</option>
+              <option>Popular Plan</option>
+              <option>Premium Plan</option>
+              <option>Custom Plan</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Subjects</legend>
+          <label><input type="checkbox" value="Mathematics" data-contact-subject> Mathematics</label>
+          <label><input type="checkbox" value="Science" data-contact-subject> Science</label>
+          <label><input type="checkbox" value="English" data-contact-subject> English</label>
+          <label><input type="checkbox" value="Geography" data-contact-subject> Geography</label>
+          <label><input type="checkbox" value="Computer Studies" data-contact-subject> Computer Studies</label>
+          <label><input type="checkbox" value="Exam Preparation" data-contact-subject> Exam Preparation</label>
+        </fieldset>
+
+        <label>
+          Preferred time
+          <select name="time">
+            <option>Weekday afternoons</option>
+            <option>Weekday evenings</option>
+            <option>Saturday mornings</option>
+            <option>Flexible</option>
+          </select>
+        </label>
+
+        <label>
+          What should we help with first?
+          <textarea name="message" rows="5" placeholder="Tell us about school goals, recent marks, difficult topics, or exam dates."></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Prepare Enquiry</button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+    </section>
+
+    <section class="section next-steps">
+      <div class="section-head compact-head">
+        <p class="section-kicker">What happens next</p>
+        <h2>A simple start.</h2>
+      </div>
+
+      <div class="mode-grid">
+        <article>
+          <span>01</span>
+          <h3>We review your request</h3>
+          <p>We check grade, subjects, schedule, and urgency.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Free assessment</h3>
+          <p>A short conversation helps us recommend the right plan.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>First lesson</h3>
+          <p>The tutor starts with clear goals and a friendly pace.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="images/logo-cropped.png" alt="The Soda Method Tutoring logo">
+      <div>
+        <strong>The Soda Method Tutoring</strong>
+        <p>We will help you shape the right learning plan.</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

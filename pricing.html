@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | The Soda Method</title>
+  <meta name="description" content="Compare The Soda Method weekly and monthly pricing plans, estimate lesson costs, and choose the tutoring package that fits your learner.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Soda Method home">
+      <img class="brand-mark" src="images/logo-mark.png" alt="" aria-hidden="true">
+      <span class="brand-text">The Soda Method <small>Tutoring</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a class="active" href="pricing.html">Pricing</a>
+      <a class="nav-cta" href="contact.html">Book Assessment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero pricing-hero">
+      <div>
+        <p class="eyebrow">Flexible packages</p>
+        <h1>Pricing that grows with your learner.</h1>
+        <p>Start small, increase support before tests, or build a full study plan for the term.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Plans</p>
+        <h2>Choose a package, then book an assessment.</h2>
+        <p>Prices are easy to compare and can be adjusted after we understand your learner's schedule, grade, and subject needs.</p>
+      </div>
+
+      <div class="billing-toggle" aria-label="Billing options">
+        <button class="is-active" type="button" data-billing="weekly">Weekly</button>
+        <button type="button" data-billing="monthly">Monthly</button>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card accent-blue">
+          <p class="plan-label">Starter</p>
+          <h3>Single Subject</h3>
+          <p class="price"><span data-price data-weekly="R250" data-monthly="R950">R250</span> <small data-period>/ week</small></p>
+          <ul class="tick-list">
+            <li>1 subject focus</li>
+            <li>2 lessons per week</li>
+            <li>Homework help</li>
+            <li>Monthly progress note</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html" data-plan-choice="Starter Plan">Choose Starter</a>
+        </article>
+
+        <article class="price-card featured accent-gold">
+          <p class="plan-label">Most popular</p>
+          <h3>Confidence Builder</h3>
+          <p class="price"><span data-price data-weekly="R450" data-monthly="R1 750">R450</span> <small data-period>/ week</small></p>
+          <ul class="tick-list">
+            <li>2 subject focus</li>
+            <li>4 lessons per week</li>
+            <li>Test prep included</li>
+            <li>Weekly parent update</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html" data-plan-choice="Popular Plan">Choose Popular</a>
+        </article>
+
+        <article class="price-card accent-teal">
+          <p class="plan-label">Premium</p>
+          <h3>Exam Coach</h3>
+          <p class="price"><span data-price data-weekly="R700" data-monthly="R2 700">R700</span> <small data-period>/ week</small></p>
+          <ul class="tick-list">
+            <li>All selected subjects</li>
+            <li>Unlimited support notes</li>
+            <li>Exam sprint calendar</li>
+            <li>Priority scheduling</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html" data-plan-choice="Premium Plan">Choose Premium</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section estimator-section">
+      <div class="estimator-copy">
+        <p class="section-kicker">Plan builder</p>
+        <h2>Estimate a custom week.</h2>
+        <p>Use the sliders to sketch a tutoring rhythm. Final pricing can be confirmed after the free assessment.</p>
+      </div>
+
+      <div class="estimator" aria-label="Tutoring estimate calculator">
+        <label for="lessonRange">Lessons per week <strong data-lesson-output>3</strong></label>
+        <input id="lessonRange" type="range" min="1" max="6" value="3" data-lesson-range>
+
+        <label for="subjectCount">Subjects</label>
+        <select id="subjectCount" data-subject-count>
+          <option value="1">1 subject</option>
+          <option value="2" selected>2 subjects</option>
+          <option value="3">3 subjects</option>
+          <option value="4">4+ subjects</option>
+        </select>
+
+        <div class="estimate-result">
+          <span>Estimated weekly plan</span>
+          <strong data-estimate-total>R510</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section comparison-section">
+      <div class="section-head compact-head">
+        <p class="section-kicker">Included support</p>
+        <h2>What every plan can include.</h2>
+      </div>
+
+      <div class="comparison-grid">
+        <div>
+          <strong>Diagnostic start</strong>
+          <span>Find strengths and gaps before the plan begins.</span>
+        </div>
+        <div>
+          <strong>Learning resources</strong>
+          <span>Worksheets, notes, revision questions, and practice tasks.</span>
+        </div>
+        <div>
+          <strong>Progress tracking</strong>
+          <span>Lesson notes and goals make improvement visible.</span>
+        </div>
+        <div>
+          <strong>Flexible scheduling</strong>
+          <span>Increase support before tests or reduce it after a strong term.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div>
+        <p class="section-kicker">Selected plan</p>
+        <h2 data-selected-plan-label>No plan selected yet.</h2>
+      </div>
+      <a class="btn btn-light" href="contact.html">Send Enquiry</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="images/logo-cropped.png" alt="The Soda Method Tutoring logo">
+      <div>
+        <strong>The Soda Method Tutoring</strong>
+        <p>Transparent plans with room to adapt.</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="subjects.html">Subjects</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:brightmindstutoring@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

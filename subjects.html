@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects | The Soda Method</title>
+  <meta name="description" content="Choose The Soda Method subjects including mathematics, science, English, geography, computer studies, homework support, and exam preparation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Soda Method home">
+      <img class="brand-mark" src="images/logo-mark.png" alt="" aria-hidden="true">
+      <span class="brand-text">The Soda Method <small>Tutoring</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="subjects.html">Subjects</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="nav-cta" href="contact.html">Book Assessment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero subjects-hero">
+      <div>
+        <p class="eyebrow">Custom subject support</p>
+        <h1>Choose the support your learner needs.</h1>
+        <p>Pick subjects now and the site will remember them when you move to pricing or booking.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Subjects</p>
+        <h2>From homework rescue to exam confidence.</h2>
+        <p>Select one or more focus areas. Each subject can be taught as weekly support, exam prep, catch-up sessions, or enrichment lessons.</p>
+      </div>
+
+      <div class="filter-bar" aria-label="Subject filters">
+        <button class="is-active" type="button" data-filter="all">All</button>
+        <button type="button" data-filter="foundation">Foundation</button>
+        <button type="button" data-filter="senior">Senior</button>
+        <button type="button" data-filter="exam">Exam</button>
+        <button type="button" data-filter="digital">Digital</button>
+      </div>
+
+      <div class="subject-grid" data-subject-grid>
+        <label class="subject-card accent-blue" id="mathematics" data-groups="foundation senior exam">
+          <input type="checkbox" value="Mathematics" data-subject-input>
+          <span class="subject-badge">Math</span>
+          <strong>Mathematics</strong>
+          <small>Number skills, algebra, geometry, functions, data handling, and problem solving.</small>
+        </label>
+
+        <label class="subject-card accent-teal" id="science" data-groups="foundation senior exam">
+          <input type="checkbox" value="Science" data-subject-input>
+          <span class="subject-badge">Sci</span>
+          <strong>Science</strong>
+          <small>Natural sciences, physical sciences, experiments, formulas, and exam questions.</small>
+        </label>
+
+        <label class="subject-card accent-coral" id="english" data-groups="foundation senior exam">
+          <input type="checkbox" value="English" data-subject-input>
+          <span class="subject-badge">Eng</span>
+          <strong>English</strong>
+          <small>Reading, grammar, essay structure, literature, comprehension, and vocabulary.</small>
+        </label>
+
+        <label class="subject-card accent-gold" id="geography" data-groups="senior exam">
+          <input type="checkbox" value="Geography" data-subject-input>
+          <span class="subject-badge">Geo</span>
+          <strong>Geography</strong>
+          <small>Mapwork, climate, population, development, case studies, and exam technique.</small>
+        </label>
+
+        <label class="subject-card accent-violet" id="computer-studies" data-groups="senior digital">
+          <input type="checkbox" value="Computer Studies" data-subject-input>
+          <span class="subject-badge">ICT</span>
+          <strong>Computer Studies</strong>
+          <small>Digital literacy, coding foundations, spreadsheets, projects, and practical tasks.</small>
+        </label>
+
+        <label class="subject-card accent-rose" id="exam-preparation" data-groups="exam">
+          <input type="checkbox" value="Exam Preparation" data-subject-input>
+          <span class="subject-badge">Prep</span>
+          <strong>Exam Preparation</strong>
+          <small>Past papers, study calendars, timed practice, memory tools, and confidence drills.</small>
+        </label>
+
+        <label class="subject-card accent-green" id="homework-support" data-groups="foundation senior">
+          <input type="checkbox" value="Homework Support" data-subject-input>
+          <span class="subject-badge">HW</span>
+          <strong>Homework Support</strong>
+          <small>Weekly accountability, task planning, project guidance, and study routines.</small>
+        </label>
+
+        <label class="subject-card accent-orange" id="study-skills" data-groups="foundation senior exam">
+          <input type="checkbox" value="Study Skills" data-subject-input>
+          <span class="subject-badge">Skill</span>
+          <strong>Study Skills</strong>
+          <small>Note-taking, revision systems, time management, focus habits, and confidence coaching.</small>
+        </label>
+      </div>
+
+      <div class="selection-panel">
+        <div>
+          <p class="section-kicker">Your selected focus</p>
+          <div class="chip-row" data-subject-summary>
+            <span class="empty-chip">No subjects selected yet</span>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="pricing.html">Continue to Pricing</a>
+      </div>
+    </section>
+
+    <section class="section support-modes">
+      <div class="section-head compact-head">
+        <p class="section-kicker">Lesson formats</p>
+        <h2>Four ways to learn.</h2>
+      </div>
+
+      <div class="mode-grid">
+        <article>
+          <span>01</span>
+          <h3>Catch-up sessions</h3>
+          <p>Slow down difficult topics and rebuild missing foundations.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Weekly tutoring</h3>
+          <p>Stay ahead with consistent lessons, homework checks, and feedback.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Exam sprint</h3>
+          <p>Use past papers, timed drills, and topic priority lists.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Enrichment</h3>
+          <p>Stretch stronger learners with deeper projects and problem solving.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="images/logo-cropped.png" alt="The Soda Method Tutoring logo">
+      <div>
+        <strong>The Soda Method Tutoring</strong>
+        <p>Choose subjects now, refine the plan after assessment.</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
